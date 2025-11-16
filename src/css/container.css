@@ -1,19 +1,62 @@
-/* Styles for Mobile devices */
-.container {
-  min-width: 320px;
-  max-width: 375px;
-  margin: 0 auto;
-  padding: 0 16px;
+.boxer{
+  margin: 36px auto;
 }
-/* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
+
+.date-time{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+
+
 }
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
+.date-time>input{
+border-radius: 4px;
+width: 272px;
+height: 40px;
+  font-weight: 400px;
+  font-size: 16px ;
+color: #2e2f42;
+padding-left: 8px;
+}
+.date-time>button{
+border-radius: 8px;
+padding: 8px 16px;
+width: 75px;
+height: 40px;
+background: #4e75ff;
+    font-weight: 500px;
+  font-size: 16px ;
+  color: #fff;
+}
+.date-time>button:disabled{
+background: #cfcfcf;
+color: #000;
+opacity: 0.3;
+}
+.date-time>button:hover:not(:disabled), .date-time>button:active:not(:disabled){
+background: #6c8cff;
+
+}
+.timer {
+  text-align: center;
+  min-width: 346px;
+  height: 72px;
+  display: flex;
+  gap: 24px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  min-width: 55px;
+}
+.value {
+    font-weight: 400px;
+  font-size: 40px ;
+color: #2e2f42;
+}
+.label {
+  text-transform: uppercase;
+  font-weight: 400px;
+  font-size: 16px ;
+color: #2e2f42;
 }
